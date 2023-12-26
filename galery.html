@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Image Gallery</title>
+</head>
+<body>
+  <!-- Heading Name -->
+  <div class="heading">
+    <h1>Фотогалерея</h1>
+    <div class="poit">
+<a href="index.html"> На главную</a>
+    </div>
+  </div>
+    <!-- Image Gallery section all image in one div -->
+    <div class="gallery">
+
+<img src="galery/1.png" alt="Image 4" class="gallery-img" onclick="showImage(src)">
+<img src="galery/2.png" alt="Image 5" class="gallery-img" onclick="showImage(src)">
+<img src="galery/3.png" alt="Image 6" class="gallery-img" onclick="showImage(src)">
+         <img src="galery/4.png" alt="Image 6" class="gallery-img" onclick="showImage(src)">
+         <img src="galery/5.png" alt="Image 6" class="gallery-img" onclick="showImage(src)">
+         <img src="galery/6.png" alt="Image 6" class="gallery-img" onclick="showImage(src)">
+         <img src="galery/7.png" alt="Image 6" class="gallery-img" onclick="showImage(src)">
+         <img src="galery/8.png" alt="Image 6" class="gallery-img" onclick="showImage(src)">
+         <img src="galery/9.png" alt="Image 6" class="gallery-img" onclick="showImage(src)">
+</div>
+   
+  <!-- Image containter where image will show in big size -->
+      <div class="image-popup-container" id="imagePopup">
+        <span class="close-button" onclick="closeImage()">×</span>
+        <img src="" alt="Popup Image" id="popupImage">
+        
+      </div>
+
+    <script src="js/script.js"></script>
+
+</body>
+</html>
