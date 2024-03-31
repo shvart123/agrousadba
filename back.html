@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   
+    <link rel='stylesheet' href='style.css'>
+      <link rel='stylesheet' href='css/responsive.css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <title>АГРОУСАДЬБА</title>
+</head>
+<body>
+
+<div class='header'  >
+    <div class="container" >
+
+        <div class='header-line'>
+            <div class='header-logo'>
+                <img src="img/logo.png" alt="">
+            </div>
+
+            <div class='nav'>
+                <a class='nav-item' href="index.html"> ГЛАВНАЯ </a>
+                <a class='nav-item' href="galery.html">Фотогалерея</a>
+                <a class='nav-item' href="back.html">О НАС</a>
+                <a class='nav-item' href="@">БРОНЬ</a>
+            </div>
+
+            
+            <div class='phone'>
+                <div class='phone-holder'>
+                    <div class='phone-img'>
+                        <img src="phone.png" alt="">
+                    </div>
+
+                    <div class='number'><a class='num' href='#'>+375-</->25-888-76-54</a></div>
+                </div>
+
+                <div class='phone-text'>
+                    Свяжитесь с нами для <br> бронирования
+                </div>
+            </div>
+
+            <div class='btn'>
+                <a class='button' href='#'> Забронировать</a>
+            </div>
+            <div class="menu">
+                <button id="burger">
+                <img src="ico/menu.png">
+            </button>
+
+            <div id="men" class="burger-slide disp">
+                <a class='nav-item block' href="index.html"> ГЛАВНАЯ </a>
+                <a class='nav-item block' href="galery.html">Фотогалерея</a>
+                <a class='nav-item block' href="@">О НАС</a>
+                <a class='nav-item block' href="@">БРОНЬ</a>
+            </div>
+            </div>
+        </div>
+        <div class="header-down">
+        <div class='header-title'>
+            Добро пожаловать в
+
+            <div class="header-subtitle">
+                нашу агроусадьбу
+            </div>
+            <div class="header-suptitle">
+                У Володи
+            </div>
+            <div class="header-btn">
+                <a href="#" class="header-button" > Услуги </a>
+                
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+
+    
+<div class="centerblock">
+    
+<div class="leftblock">
+
+<h1>
+    Мы рады каждому гостю
+
+</h1>
+<h2> +375-</->25-888-76-54
+</h2>
+<h3>
+Минская область, Смолевичский район, д. Калюжки, ул. Васильковая, д. 1а</h3>
+</div>
+<div class="rightblock">
+
+<img  class="rightimg"
+src="img/Снимок.png">
+</h4>
+</div>
+</div>
+  
+    <div class="centerblock">
+    
+<div class="leftblock">
+
+<h1>
+   Оставьте заявку и мы свяжемся с вами
+
+</h1>
+
+</div>
+<div class="rightblock">
+
+
+
+<form action="http://mihailmaximov.ru/projects/mail/post.php" method="post" name="form">
+  <!-- Поле ввода имени -->
+  <input name="name" type="text" placeholder="Ваше имя" />
+  <br>
+  <!-- Поле ввода почты  -->
+  <input name="email" type="text" placeholder="Ваша почта" />
+  <br>
+  <!-- Поле ввода для темы сообщения -->
+  <input size="30" name="header" type="text" placeholder="Тема" />
+  <br>
+  <!-- Текстовое поле для самого сообщения -->
+  <textarea cols="32" name="message" rows="5"> Текст сообщения
+  </textarea>
+  <br>
+  <!-- Кнопка с надписью «Отправить», которая запускает обработчик формы -->
+  <input class="butt" type="submit" value="Отправить" />
+</form>
+</div>
+</div>
+
+
+<div class="footer">
+    Copyright 2023
+</div>
+<div id="popupOverlay" 
+         class="overlay-container"> 
+        <div class="popup-box"> 
+            <h2 style="color: green;">Бронь</h2> 
+            <form class="form-container"> 
+                <label class="form-label" 
+                       for="name"> 
+                  Номер телефона 
+                  </label> 
+                <input class="form-input" type="text" 
+                       placeholder="Введите ваш номер телефона" 
+                       id="name" name="name" required> 
+  
+                <label class="form-label" for="email">Email:</label> 
+                <input class="form-input"
+                       type="email" 
+                       placeholder="Введите ваш Email"
+                       id="email" 
+                       name="email" required> 
+  
+                <button class="btn-submit" 
+                        type="submit"> 
+                  Отправить
+                  </button> 
+            </form> 
+  
+            <button class="btn-close-popup" 
+                    onclick="togglePopup()"> 
+              Закрыть
+              </button>
+              
+<script src="js/script.js"></script>
+<script>
+     function togglePopup() { 
+            const overlay = document.getElementById('popupOverlay'); 
+            overlay.classList.toggle('show'); 
+        } 
+</script>
+  <script src="./js/buttonup.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+</html>
