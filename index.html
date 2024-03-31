@@ -8,12 +8,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
       <title>АГРОУСАДЬБА</title>
 </head>
 <body>
 
-<div class='header'>
-    <div class='container'>
+<div class='header'  >
+    <div class="container" >
+
         <div class='header-line'>
             <div class='header-logo'>
                 <img src="img/logo.png" alt="">
@@ -22,8 +24,10 @@
             <div class='nav'>
                 <a class='nav-item' href="index.html"> ГЛАВНАЯ </a>
                 <a class='nav-item' href="galery.html">Фотогалерея</a>
-                <a class='nav-item' href="@">О НАС</a>
-                <a class='nav-item' href="@">БРОНЬ</a>
+                <a class='nav-item' href="back.html">О НАС</a>
+                
+                
+
             </div>
 
             
@@ -41,9 +45,9 @@
                 </div>
             </div>
 
-            <div class='btn'>
-                <a class='button' href='#'> СДЕЛАТЬ ЗАКАЗ</a>
-            </div>
+           <button class="btn-open-popup" onclick="togglePopup()"> 
+     ЗАБРОНИРОВАТЬ 
+      </button>
             <div class="menu">
                 <button id="burger">
                 <img src="ico/menu.png">
@@ -102,11 +106,11 @@
         <div class="card-image">
            <img src="ico/food.png">
         </div>
-        <div class="card-title">
+        <div class="card-title" >
           Недорогая <span> Eда</span> 
             
         </div>
-        <div class="card-desc">
+        <div class="card-desc" >
             Стоимость нашей еды зависит только от ее количества
             
         </div>
@@ -126,7 +130,7 @@
       </div>
 </div>
 
-<div class="history">
+<div class="history" >
     <div class="container">
      <div class="history-holder">
         <div class="history-info">
@@ -153,8 +157,8 @@
 
 
 </div>
- <div class="history-img">
-    <img class="img1" src="img/4.jpg">
+ <div class="history-img" >
+    <img class="img1" src="img/4.jpg" >
      <img class="img2" src="img/2.jpg">
        <img class="img3" src="img/5.jpg">
     
@@ -177,35 +181,109 @@
     </div>
        <div class="right">
         <div class="right-button">
-            <a href="#" class= "right-btn">СДЕЛАТЬ ЗАКАЗ</a>
+    
+            <button class="btn-open-popup" onclick="togglePopup()"> 
+     ЗАБРОНИРОВАТЬ 
+      </button>
         </div>
     </div>
        </div>
    </div> 
     
 </div>
-<div class="comment">
-    <div class="container">
+<div class='black-block1'>
+   <h1>
+        Уютные дома для отдыха и аренды
+    </h1>
+   <div class="container" >
+
+    <div class="block-holder">
+    <div class="left">
+        <div class="left-title1">
+            Дома оснащены мебелью, бытовой техникой, посудой, постельным бельем, полотенцами, а также хозяйственными принадлежностями.
+        </div>
         
-        <div class="comment-text">
-            Я надолго запомню мой День рождения, проведенный в этой агроусадьбе! Такое чувство, что побывал в прошлом, окунулся в жизнь наших предков. Будем рекомендовать эту усадьбу своим друзьям и родственникам.
-        </div>
-        <div class="comment-image">
-            <img src="img/11.png" class="comment-img">
-            
-        </div>
-        <div class="comment-type">
-            Посетитель
-        </div>
-        <div class="comment-name">
-            Николай
-        </div>
     </div>
+       <div class="right">
+        <div class="right-title1">
+           <img src="img/10.jpg">
+        </div>
+        
+    </div>
+       </div>
+   </div> 
     
 </div>
+
+  <div class='black-block1'>
+   <h1>
+        
+Отдых на пруду
+    </h1>
+   <div class="container" >
+
+    <div class="block-holder">
+    <div class="left">
+        <div class="left-title1">
+          Oтдых и аренда беседок не только обеспечивает вас комфортной рыбалкой, но и просто дает возможность насладиться отдыхом и пикником на природе. Вы можете приготовить вкусный шашлык в мангале на углях, расположиться за столом и наслаждаться общением с близкими, пока рыба активно клюет в пруду.
+        </div>
+        
+    </div>
+       <div class="right">
+        <div class="right-title1">
+           <img src="img/10.jpg">
+        </div>
+        
+    </div>
+       </div>
+   </div> 
+    
+</div>
+    
+
+
 <div class="footer">
     Copyright 2023
 </div>
+<div id="popupOverlay" 
+         class="overlay-container"> 
+        <div class="popup-box"> 
+            <h2 style="color: green;">Бронь</h2> 
+            <form class="form-container"> 
+                <label class="form-label" 
+                       for="name"> 
+                  Номер телефона 
+                  </label> 
+                <input class="form-input" type="text" 
+                       placeholder="Введите ваш номер телефона" 
+                       id="name" name="name" required> 
+  
+                <label class="form-label" for="email">Email:</label> 
+                <input class="form-input"
+                       type="email" 
+                       placeholder="Введите ваш Email"
+                       id="email" 
+                       name="email" required> 
+  
+                <button class="btn-submit" 
+                        type="submit"> 
+                  Отправить
+                  </button> 
+            </form> 
+  
+            <button class="btn-close-popup" 
+                    onclick="togglePopup()"> 
+              Закрыть
+              </button>
+              
 <script src="js/script.js"></script>
+<script>
+     function togglePopup() { 
+            const overlay = document.getElementById('popupOverlay'); 
+            overlay.classList.toggle('show'); 
+        } 
+</script>
+  <script src="./js/buttonup.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 </body>
 </html>
