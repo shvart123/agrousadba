@@ -24,6 +24,7 @@ body {
 }
 
 
+
 .header-line {
     padding-top: 50px;
     display: flex ;
@@ -123,7 +124,7 @@ body {
     color: #fff;
     text-decoration: none;
     padding: 14px 18px;
-    font-weight: 700;
+    font-weight: 700;border-radius: 10px;
 
     transition: background-color 0.2s linear;
 }
@@ -139,6 +140,7 @@ body {
     font-weight: 700;
       font-family: 'Open Sans', sans-serif;
       text-decoration: none;
+      border-radius: 10px;
 }
 .header-button:hover
 {
@@ -272,21 +274,154 @@ body {
 background-image: url(img/13.jpg);
 width: 100%;
 padding:80px 0px;
+
     }
 
+.black-block1{
+margin-top: 1px;
+border-color: green;
+background-color: #ccc;
+width: 100%;
+height: 260PX;
+padding:100px 0px;
+    }
+    .black-block1 h1
+    {
+        text-align: center;
+        margin-top: -70px;
+        font-size: 54px;
+    }
+    .block-holder1{
+        width: 100%;
+          height: auto;
+    }
+    .black-block2{
+
+background-color: white;
+width: 100%;
+height: 260PX;
+padding:100px 0px;
+    }
+    .black-block2 h1
+    {
+        text-align: center;
+        margin-top: -70px;
+        font-size: 54px;
+    }
 .left-title{
     color:#D67E34;
     font-family: 'Tinos', self;
     font-size: 54px;
     font-weight: 400;
     margin-bottom: 20px;
+
      
+}
+.left-title1{
+    width: 100%;
+    color:black;
+    font-family: 'Tinos', self;
+    font-size: 24px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    display: block;
+   margin-left: -100PX;
+}
+
+.right-title1{
+    width: 10%;
+    color:black;
+    font-family: 'Tinos', self;
+    font-size: 24px;
+    font-weight: 100;
+    margin-bottom: 20px;
+    display: block;
+   margin-left: -100PX;
+}
+.right-title2{
+    width: 50%;
+    height: 100%;
+    color:black;
+    font-family: 'Tinos', self;
+    font-size: 24px;
+    font-weight: 100;
+    margin-bottom: 80px;
+    display: block;
+   margin-left: 800px;
+   background-color: black;
+}
+
+.right-title1 img{
+    padding: 10px;
+    height: 100%;
+    width: 600px;
+    margin-left: 100px;
+}
+.centerblock {
+width: 100%;
+height: 100%;
+background-color: #dddddd;
+display: block;
+margin-top: -200px;
+padding-top:50px ;
+}
+.centerblock h1{
+    font-size: 40px;
+}
+.leftblock{
+    width: 25%;
+    height: auto;
+    display: block;
+    padding: 30px;
+    margin-left: 150px ;
+}
+.rightblock{
+    width: 50%;
+    height: auto;
+    display: block;
+   margin-LEFT: 700px;
+   margin-top: -240px;
+}
+.rightimg{
+    width: 100%;
+    height: 100%;
+}
+
+.butt:hover{
+    background-color: green;
+
+}
+/* Настраиваем внешний вид полей ввода*/
+input {
+  display: inline-block;
+  margin: 10px auto;
+  border: 2px solid #eee;
+  padding: 10px 20px;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 16px;
+  border-radius: 20px;
+}
+textarea {
+  display: inline-block;
+  margin: 10px auto;
+  border: 2px solid #eee;
+  padding: 10px 20px;
+  font-family: Verdana, Arial, sans-serif;
+  font-size: 16px;
+  border-radius: 20px;
 }
 .left-text{
     font-weight: 700;
     font-size: 24px;
     color: #FFF;
 }
+
+.right-button1 img{
+height: 400PX;
+width: 400PX;
+
+}
+/*
 .right-btn{
      background-color: #FF7400;
     color: #fff;
@@ -294,6 +429,40 @@ padding:80px 0px;
     padding: 14px 18px;
     font-weight: 700;
 }
+
+*/
+.btn-open-popup{
+     background-color: #FF7400;
+    color: #fff;
+    text-decoration: none;
+    padding: 14px 18px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+*/ открыть форму*/
+.btn-open-popup:hover{
+     background-color: #ff740078;
+}
+
+
+
+
+
+.btn-open-popup1{
+      color: #fff;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 14px;
+
+    margin-right: 25px;
+
+    transition: color 0.3s linear;
+}
+*/ открыть форму*/
+.btn-open-popup1:hover{
+     background-color: #ff740078;
+}
+
 .block-holder{
     display: flex;
     justify-content: space-between;
@@ -385,6 +554,7 @@ display: none;
 .right-button{
     margin-top: 30px;
 }
+
 .history-img{
     display: none;
 }
@@ -416,6 +586,104 @@ display: none;
 }
 
 }
+
+
+  
+        .btn-open-popup:hover { 
+              background-color: #ff740078; 
+        } 
+  
+        .overlay-container { 
+            display: none; 
+            position: fixed; 
+            top: 0; 
+            left: 0; 
+            width: 100%; 
+            height: 100%; 
+            background: rgba(0, 0, 0, 0.6); 
+            justify-content: center; 
+            align-items: center; 
+            opacity: 0; 
+            transition: opacity 0.3s ease; 
+        } 
+  
+        .popup-box { 
+            background: #fff; 
+            padding: 24px; 
+            border-radius: 12px; 
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.4); 
+            width: 320px; 
+            text-align: center; 
+            opacity: 0; 
+            transform: scale(0.8); 
+            animation: fadeInUp 0.5s ease-out forwards; 
+        } 
+  
+        .form-container { 
+            display: flex; 
+            flex-direction: column; 
+        } 
+  
+        .form-label { 
+            margin-bottom: 10px; 
+            font-size: 16px; 
+            color: #444; 
+            text-align: left; 
+        } 
+  
+        .form-input { 
+            padding: 10px; 
+            margin-bottom: 20px; 
+            border: 1px solid #ccc; 
+            border-radius: 8px; 
+            font-size: 16px; 
+            width: 100%; 
+            box-sizing: border-box; 
+        } 
+  
+        .btn-submit, 
+        .btn-close-popup { 
+            padding: 12px 24px; 
+            border: none; 
+            border-radius: 8px; 
+            cursor: pointer; 
+            transition: background-color 0.3s ease, color 0.3s ease; 
+        } 
+  
+        .btn-submit { 
+            background-color: green; 
+            color: #fff; 
+        } 
+  
+        .btn-close-popup { 
+            margin-top: 12px; 
+            background-color: #e74c3c; 
+            color: #fff; 
+        } 
+  
+        .btn-submit:hover, 
+        .btn-close-popup:hover { 
+            background-color: #4caf50; 
+        } 
+  
+        /* Keyframes for fadeInUp animation */ 
+        @keyframes fadeInUp { 
+            from { 
+                opacity: 0; 
+                transform: translateY(20px); 
+            } 
+  
+            to { 
+                opacity: 1; 
+                transform: translateY(0); 
+            } 
+        } 
+  
+        /* Animation for popup */ 
+        .overlay-container.show { 
+            display: flex; 
+            opacity: 1; 
+        } 
 
 @media(max-width: 1000px)
 {
