@@ -189,7 +189,38 @@
       </div>
     </footer>
  
-
+<div id="popupOverlay" 
+         class="overlay-container"> 
+        <div class="popup-box"> 
+            <h2 style="color: #D67E35;">  Быстрое бронирование</h2> 
+            <form class="form-container"> 
+                <label class="form-label" 
+                       for="name"> 
+                  Номер телефона 
+                  </label> 
+                <input class="form-input" type="text" 
+                       placeholder="Введите ваш номер телефона" 
+                       id="name" name="name" required> 
+  
+                <label class="form-label" for="email">Ваше имя:</label> 
+                <input class="form-input"
+                       type="email" 
+                       placeholder="Введите ваш имя"
+                       id="email" 
+                       name="email" required> 
+  
+                <button class="btn-submit" 
+                        type="submit"> 
+                  Отправить
+                  </button> 
+            </form> 
+  
+            <button class="btn-close-popup" 
+                    onclick="togglePopup()"> 
+              Закрыть
+              </button>
+              </div>
+          </div>
 
             
 <script src="js/script.js"></script>
