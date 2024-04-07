@@ -16,6 +16,8 @@
 @media (max-width: 1230px) {
 	.nav-list {
 		display: none;
+		.btn-open-popup{
+			display:none;
 	}
 .right-title1 img {
    margin-top: -10px;
